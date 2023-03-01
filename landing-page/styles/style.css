@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --cor-primaria: rgb(34, 34, 34);
+    --cor-secundaria: white;
+    --cor-terciaria: rgb(132, 14, 201);
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: Poppins, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+.menu__navegacao li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.menu__navegacao__links{
+    color: var(--cor-secundaria);
+}
+
+.menu__navegacao__links:hover{
+    color: var(--cor-terciaria);
+    transition: 0.3s all;
+}
+
+.menu__navegacao__links__criar__conta{
+    border: 2px solid var(--cor-terciaria);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.menu__navegacao__links__criar__conta:hover{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__titulo{
+    font-weight: 200;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.conteudo__titulo{
+    font-size: 56px;
+    line-height: 10px;
+    font-weight: 500;
+}
+
+.conteudo__texto{
+    line-height: 20px;
+    max-width: 500px;
+    font-weight: 300px;
+}
+
+span{
+    color: var(--cor-terciaria);
+}
+
+
+.imagem{
+    width: 620px;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.formulario [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+.formulario [type="submit"]:hover{
+    cursor: pointer;
+}
+
+.formulario__caixa{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+
